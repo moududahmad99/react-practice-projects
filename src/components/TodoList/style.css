@@ -1,0 +1,75 @@
+.TodoList {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #394867;
+  font-family: sans-serif;
+  margin-top: 45px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.TodoList h1 {
+  text-align: center;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.TodoList-input {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  width: 70%;
+  margin: 20px 10px 10px 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  outline: none;
+  background-color: #F1F6F9;
+}
+
+.TodoList-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #F1F6F9;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.TodoList-todos {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.TodoList-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.TodoList-deleteButton {
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+}

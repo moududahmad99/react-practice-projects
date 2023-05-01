@@ -22,21 +22,21 @@ function LoginForm() {
                 <div className='form-wrapper'>
                         <div className='form-inner'>
                             <label>Name:</label>
-                            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                            <input className='login-input' type="text" value={name} onChange={(e) => setName(e.target.value)} />
                         </div>
                         <div className='form-inner'>
                             <label>Email: </label>
-                            <input type="email" value={email} onChange={(e) => {
+                            <input className='login-input' type="email" value={email} onChange={(e) => {
                                 setEmail(e.target.value)
                             }} />
                         </div>
                         <div className='form-inner'>
                             <label>Password:</label>
-                            <input type="password" value={password} onChange={(e) => {
+                            <input className='login-input' type="password" value={password} onChange={(e) => {
                                 setPassword(e.target.value)
                             }} />
                         </div>
-                        <button type='submit' className='button'>Submit Info</button>
+                        <button type='submit' className='login-button'>Submit Info</button>
                     </div>
             </form>
         </React.Fragment>

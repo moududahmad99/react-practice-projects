@@ -42,7 +42,7 @@ body {
   align-items: center;
 }
 
-input {
+.login-input {
   height: 35px;
   width: 240px;
   border: none;
@@ -51,7 +51,7 @@ input {
   outline: none;
 }
 
-button {
+.loginForm-button {
   height: 50px;
   width: 300px;
   margin-top: 20px;
