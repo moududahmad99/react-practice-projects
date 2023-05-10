@@ -1,0 +1,33 @@
+body {
+    background: #52616460;
+}
+.calculator {
+    height: 90vh;
+    /* width: vh; */
+    /* border: 1px solid; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.calculator-inner {
+    background: #aaaaaa;
+    padding: 20px;
+}
+
+.calc-display {
+    padding: 10px 0;
+    background: #b4d6f598;
+    color: #3dacec;
+    margin: 10px 0;
+}
+
+.calc-button {
+    height: 44px;
+    width: 50px;
+    border: none;
+    margin: 1px;
+    background: #bdbdbd;
+}
