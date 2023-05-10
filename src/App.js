@@ -1,10 +1,10 @@
 import './App.css';
-import MainItemList from './components/ItemList/App';
+import MainUserList from './components/UserList/App';
 
 function App() {
     return (
         <div className="App">
-            <MainItemList />
+            <MainUserList />
         </div>
     );
 }

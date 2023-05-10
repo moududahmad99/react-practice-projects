@@ -1,0 +1,21 @@
+.table-wrapper {
+  width: 1320px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.table-row, .table-head {
+  background: #F1F6F9;
+  padding: 10px 0;
+  border: 1px solid #8f8f8f;
+}
+
+.table-row td {
+  padding: 10px 0;
+  border: 1px solid #8f8f8f;
+  font-family: sans-serif;
+}
+
+.table-row:nth-child(odd) {
+  background: #ffffff;
+}
