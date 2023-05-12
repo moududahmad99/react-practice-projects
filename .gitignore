@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 /src/components/WeatherApp/
+/src/components/SocialMedia/
+/src/components/MusicApp/
 
 # testing
 /coverage
