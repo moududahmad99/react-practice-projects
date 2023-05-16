@@ -1,10 +1,10 @@
 import './App.css';
-import ProductsOne from './components/E-commerce/ProductsOne';
+import FormExtension from './components/Elec/Form Component/Index';
 
 function App() {
     return (
         <div className="App">
-            <ProductsOne />
+            <FormExtension />
         </div>
     );
 }

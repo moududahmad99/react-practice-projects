@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './style.css'
 
 function UserList() {
   const [users, setUsers] = useState([]);
@@ -13,24 +14,27 @@ function UserList() {
   }, [])
 
   return (
-    <table className='table-wrapper'>
-      <thead>
-        <tr className='table-row'>
-          <th className='table-head'>Name</th>
-          <th className='table-head'>Email</th>
-          <th className='table-head'>Phone</th>
-        </tr>
-      </thead>
-      <tbody>
-        {users.map((user) => (
-          <tr key={user.id}  className='table-row'>
-            <td>{user.name}</td>
-            <td>{user.email}</td>
-            <td>{user.phone}</td>
+    <>
+      <h3 className='userH3'>User Data</h3>
+      <table className='table-wrapper'>
+        <thead>
+          <tr className='table-row'>
+            <th className='table-head'>Name</th>
+            <th className='table-head'>Email</th>
+            <th className='table-head'>Phone</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {users.map((user) => (
+            <tr key={user.id} className='table-row'>
+              <td>{user.name}</td>
+              <td>{user.email}</td>
+              <td>{user.phone}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 }
 

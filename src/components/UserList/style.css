@@ -1,7 +1,14 @@
+.userH3 {
+  text-align: center;
+  margin-top: 140px;
+  font-family: 'Montserrat';
+
+}
 .table-wrapper {
   width: 1320px;
   margin: 0 auto;
   border-collapse: collapse;
+  font-family: 'Montserrat';
 }
 
 .table-row, .table-head {
@@ -13,7 +20,8 @@
 .table-row td {
   padding: 10px 0;
   border: 1px solid #8f8f8f;
-  font-family: sans-serif;
+  font-family: 'Montserrat';
+  text-align: center;
 }
 
 .table-row:nth-child(odd) {
