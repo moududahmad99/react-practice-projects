@@ -1,10 +1,10 @@
 import './App.css';
-import FormExtension from './components/Elec/Form Component/Index';
+import MovieList from './components/MovieList';
 
 function App() {
     return (
         <div className="App">
-            <FormExtension />
+            <MovieList />
         </div>
     );
 }
