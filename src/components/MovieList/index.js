@@ -3,100 +3,76 @@ import './Style.css';
 
 const moviesData = [
     {
-        title: 'The Hulk',
-        genre: 'Action',
-        description: 'Description of The Hulk',
-        poster: './assets/movieList3.jpg',
-    },
-    {
         title: 'John Wick IV',
         genre: 'Action',
-        description: 'Description of John Wick IV',
+        description: 'Description of Movie 2',
         poster: './assets/movieList1.jpg',
-    },
-    {
-        title: 'How I Met Your Mother',
-        genre: 'Comedy',
-        description: 'Description of How I Met Your Mother',
-        poster: './assets/movieList4.jpg',
-    },
-    {
-        title: 'Intersteller',
-        genre: 'Fiction',
-        description: 'Description of Intersteller',
-        poster: './assets/movieList5.jpg',
-    },
-    {
-        title: 'Inception',
-        genre: 'Action',
-        description: 'Description of Inception',
-        poster: './assets/movieList6.jpg',
     },
     {
         title: 'Captain America',
-        genre: 'Drama',
-        description: 'Description of Captain America',
-        poster: './assets/movieList2.jpg',
-    },
-    {
-        title: 'The Lord Of the Rings',
-        genre: 'Drama',
-        description: 'Description of The Lord Of the Rings',
-        poster: './assets/movieList8.jpg',
-    },
-    {
-        title: 'The Dark Night',
-        genre: 'Drama',
-        description: 'Description of The Dark Night',
-        poster: './assets/movieList7.jpg',
-    },
-    {
-        title: 'John Wick IV',
         genre: 'Action',
-        description: 'Description of John Wick IV',
-        poster: './assets/movieList1.jpg',
+        description: 'Description of Movie 2',
+        poster: './assets/movieList2.jpg',
     },
     {
         title: 'The Hulk',
         genre: 'Action',
-        description: 'Description of The Hulk',
+        description: 'Description of Movie 2',
         poster: './assets/movieList3.jpg',
-    },
-    {
-        title: 'How I Met Your Mother',
-        genre: 'Comedy',
-        description: 'Description of How I Met Your Mother',
-        poster: './assets/movieList4.jpg',
-    },
-    {
-        title: 'Captain America',
-        genre: 'Drama',
-        description: 'Description of Captain America',
-        poster: './assets/movieList2.jpg',
-    },
-    {
-        title: 'Inception',
-        genre: 'Action',
-        description: 'Description of Inception',
-        poster: './assets/movieList6.jpg',
-    },
-    {
-        title: 'Intersteller',
-        genre: 'Fiction',
-        description: 'Description of Intersteller',
-        poster: './assets/movieList5.jpg',
     },
     {
         title: 'The Lord Of the Rings',
         genre: 'Drama',
-        description: 'Description of The Lord Of the Rings',
-        poster: './assets/movieList8.jpg',
+        description: 'Description of Movie 2',
+        poster: './assets/movieList8.jpeg',
+    },
+    {
+        title: 'Intersteller',
+        genre: 'Fiction',
+        description: 'Description of Movie 1',
+        poster: './assets/movieList5.jpg',
+    },
+    {
+        title: 'The Hulk',
+        genre: 'Action',
+        description: 'Description of Movie 2',
+        poster: './assets/movieList3.jpg',
+    },
+    {
+        title: 'The Lord Of the Rings',
+        genre: 'Drama',
+        description: 'Description of Movie 2',
+        poster: './assets/movieList8.jpeg',
+    },
+    {
+        title: 'How I Met Your Mother',
+        genre: 'Comedy',
+        description: 'Description of Movie 5',
+        poster: './assets/movieList4.jpg',
+    },
+    {
+        title: 'Inception',
+        genre: 'Action',
+        description: 'Description of Movie 2',
+        poster: './assets/movieList6.jpg',
+    },
+    {
+        title: 'The Hulk',
+        genre: 'Action',
+        description: 'Description of Movie 2',
+        poster: './assets/movieList3.jpg',
     },
     {
         title: 'The Dark Night',
-        genre: 'Drama',
-        description: 'Description of The Dark Night',
+        genre: 'Action',
+        description: 'Description of Movie 2',
         poster: './assets/movieList7.jpg',
+    },
+    {
+        title: 'The Lord Of the Rings',
+        genre: 'Drama',
+        description: 'Description of Movie 2',
+        poster: './assets/movieList8.jpeg',
     },
 ];
 
@@ -120,12 +96,12 @@ const MovieList = () => {
 
     return (
         <React.Fragment>
-            <div className="movie-list-wrapper">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="movie-list-wrapper">
                             <div className="movie-list--filter">
-                                <div className="movie-list-filter--inner">
+                                <div>
                                     <label htmlFor="genre-filter">Filter by Genre:</label>
                                     <select id="genre-filter" value={genreFilter} onChange={handleGenreFilterChange}>
                                         <option value="">All</option>
@@ -135,7 +111,7 @@ const MovieList = () => {
                                         <option value="Fiction">Fiction</option>
                                     </select>
                                 </div>
-                                <div className="movie-list-filter--inner">
+                                <div>
                                     <label htmlFor="search-input" id='search-label'>Search by Title:</label>
                                     <input type="text" id="search-input" value={searchTerm} onChange={handleSearchTermChange} />
                                 </div>
@@ -158,3 +134,4 @@ const MovieList = () => {
 };
 
 export default MovieList;
+

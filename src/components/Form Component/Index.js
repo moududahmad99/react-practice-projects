@@ -17,8 +17,11 @@ function FormExtension() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
+        // Check if login credentials are correct
         if (username === 'admin' && password === 'password') {
-            setErrorMessage('Login Successful');
+            // Clear error message if login is successful
+            setErrorMessage('');
+            // TODO: Perform necessary actions upon successful login (e.g., redirect user)
         } else {
             setErrorMessage('Incorrect username or password');
         }
