@@ -51,10 +51,10 @@ body {
   outline: none;
 }
 
-.loginForm-button {
+.login-button {
   height: 50px;
   width: 300px;
-  margin-top: 20px;
+  margin-top: 20px !important;
   background: #f7d060;
   font-size: 18px;
   text-transform: uppercase;

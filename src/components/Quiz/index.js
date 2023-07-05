@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
+import { SiGooglehome } from 'react-icons/si'
 import './style.css'
+
 
 const questions = [
     {
@@ -65,46 +68,50 @@ function QuizGame() {
     }
 
     return (
-        <div className='quiz-game'>
-            {currentQuestion < questions.length ? (
-                <div className='quiz-question'>
-                    <h2>{questions[currentQuestion].question}</h2>
-                    <ul className='quiz-answers'>
-                        {questions[currentQuestion].answers.map((answer, index) => (
-                            <li
-                                key={index}
-                                onClick={() => handleAnswerClick(index)}
-                                className={
-                                    showAnswer && selectedAnswer === index
-                                        ? answer.correct
-                                            ? 'quiz-answer correct'
-                                            : 'quiz-answer incorrect'
-                                        : 'quiz-answer'
-                                }
-                            >
-                                {answer.text}
-                            </li>
-                        ))}
-                    </ul>
-                    <div className='quiz-buttons'>
-                        <button onClick={() => setShowAnswer(true)}>Show Answer</button>
-                        {currentQuestion < questions.length - 1 ? (
-                            <button onClick={handleNextClick} disabled={selectedAnswer === null}>
-                                Next Question
-                            </button>
-                        ) : (
-                            <button onClick={handleFinishClick} disabled={selectedAnswer === null}>
-                                Finish
-                            </button>
-                        )}
+        <>
+            <div className='quiz-game'>
+                {currentQuestion < questions.length ? (
+                    <div className='quiz-question'>
+                        <h2>{questions[currentQuestion].question}</h2>
+                        <ul className='quiz-answers'>
+                            {questions[currentQuestion].answers.map((answer, index) => (
+                                <li
+                                    key={index}
+                                    onClick={() => handleAnswerClick(index)}
+                                    className={
+                                        showAnswer && selectedAnswer === index
+                                            ? answer.correct
+                                                ? 'quiz-answer correct'
+                                                : 'quiz-answer incorrect'
+                                            : 'quiz-answer'
+                                    }
+                                >
+                                    {answer.text}
+                                </li>
+                            ))}
+                        </ul>
+                        <div className='quiz-buttons'>
+                            <button onClick={() => setShowAnswer(true)}>Show Answer</button>
+                            {currentQuestion < questions.length - 1 ? (
+                                <button onClick={handleNextClick} disabled={selectedAnswer === null}>
+                                    Next Question
+                                </button>
+                            ) : (
+                                <button onClick={handleFinishClick} disabled={selectedAnswer === null}>
+                                    Finish
+                                </button>
+                            )}
+                        </div>
                     </div>
-                </div>
-            ) : (
-                <div className='quiz-score'>
-                    <h2>Final Score: {score}</h2>
-                </div>
-            )}
-        </div>
+                ) : (
+                    <div className='quiz-score'>
+                        <h2>Final Score: {score}</h2>
+                    </div>
+                )}
+            </div>
+            {/* Home Button */}
+            <Link to='/' className='goBack'> <SiGooglehome /></Link>
+        </>
     )
 
 }

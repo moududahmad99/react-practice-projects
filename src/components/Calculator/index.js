@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
+import { SiGooglehome } from 'react-icons/si'
 import './style.css';
 
 function Calculator() {
@@ -62,6 +64,8 @@ function Calculator() {
                     <button onClick={() => handleEqual('=')} className='calc-button'> =</button>
                 </div>
             </div>
+            {/* Home Button */}
+            <Link to='/' className='goBack'> <SiGooglehome /></Link>
         </div>
     )
 }

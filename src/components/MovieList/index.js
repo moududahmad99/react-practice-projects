@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
+import { SiGooglehome } from 'react-icons/si'
 import './Style.css';
 
 const moviesData = [
@@ -128,6 +130,8 @@ const MovieList = () => {
                         </div>
                     </div>
                 </div>
+                {/* Absolute Button */}
+                <Link to='/' className='goBack'> <SiGooglehome /></Link>
             </div>
         </React.Fragment>
     );

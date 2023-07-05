@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
+import { SiGooglehome } from 'react-icons/si'
 import './style.css';
 
 function FormExtension() {
@@ -17,11 +19,8 @@ function FormExtension() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        // Check if login credentials are correct
         if (username === 'admin' && password === 'password') {
-            // Clear error message if login is successful
-            setErrorMessage('');
-            // TODO: Perform necessary actions upon successful login (e.g., redirect user)
+            setErrorMessage('Login Successful, Now you can visit Norway!');
         } else {
             setErrorMessage('Incorrect username or password');
         }
@@ -42,6 +41,8 @@ function FormExtension() {
                 <button type="submit" className="login-form-button">Login</button>
             </form>
             {errorMessage && <p className="login-form-error">{errorMessage}</p>}
+            {/* Home Button */}
+            <Link to='/' className='goBack'> <SiGooglehome /></Link>
         </div>
     );
 }

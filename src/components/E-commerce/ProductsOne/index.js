@@ -1,7 +1,9 @@
 import React from 'react';
-import './style.css';
 import { BsStarFill } from 'react-icons/bs'
 import { BsStarHalf } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+import { SiGooglehome } from 'react-icons/si'
+import './style.css';
 
 function ProductsOne() {
 
@@ -10,9 +12,6 @@ function ProductsOne() {
             <nav className='products-navbar'>
                 <div class="container">
                     <div class="logo">Moudud</div>
-                    <ul class="menu">
-                        <li><a href="/#">Account</a></li>
-                    </ul>
                 </div>
             </nav>
             {/* Product Navbar */}
@@ -92,6 +91,8 @@ function ProductsOne() {
                     </div>
                 </div>
             </div>
+            {/* Home Button */}
+            <Link to='/' className='goBack'> <SiGooglehome /></Link>
         </>
     );
 }

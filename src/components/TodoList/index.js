@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { SiGooglehome } from 'react-icons/si'
 import './style.css'
 
 const TodoList = () => {
@@ -57,6 +59,9 @@ const TodoList = () => {
                     </li>
                 ))}
             </ul>
+
+            {/* Home Button */}
+            <Link to='/' className='goBack'> <SiGooglehome /></Link>
         </div>
     )
 }

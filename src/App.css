@@ -1,0 +1,21 @@
+/* goBack */
+
+.goBack {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  color: #3c486b;
+  border: 5px solid #3c486b;
+  cursor: pointer;
+  padding: 10px 15px 8px;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}

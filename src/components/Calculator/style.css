@@ -1,10 +1,6 @@
-body {
-    background: #52616460;
-}
+
 .calculator {
     height: 90vh;
-    /* width: vh; */
-    /* border: 1px solid; */
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -13,14 +9,14 @@ body {
 }
 
 .calculator-inner {
-    background: #aaaaaa;
+    background: #0b6196;
     padding: 20px;
 }
 
 .calc-display {
     padding: 10px 0;
-    background: #b4d6f598;
-    color: #3dacec;
+    background: #00000098;
+    color: #e9f5fc;
     margin: 10px 0;
 }
 
@@ -29,5 +25,5 @@ body {
     width: 50px;
     border: none;
     margin: 1px;
-    background: #bdbdbd;
+    background: #f8f296;
 }

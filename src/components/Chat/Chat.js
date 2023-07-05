@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import 'firebase/database';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
+import { Link } from 'react-router-dom'
+import { SiGooglehome } from 'react-icons/si'
 import './style.css'
 
 const firebaseConfig = {
@@ -17,7 +19,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-const ChatApp = () => {
+const BasicChatApp = () => {
     const [messages, setMessages] = useState([]);
     const [inputText, setInputText] = useState('');
     const [username, setUsername] = useState('');
@@ -85,8 +87,10 @@ const ChatApp = () => {
                 />
                 <button type="submit">Send</button>
             </form>
+            {/* Home Button */}
+            <Link to='/' className='goBack'> <SiGooglehome /></Link>
         </div>
     );
 };
 
-export default ChatApp;
+export default BasicChatApp;

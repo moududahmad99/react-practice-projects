@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { SiGooglehome } from 'react-icons/si'
 import './style.css'
 
-
-const Navbar = () => {
+const ReactRouter = () => {
 
     return (
         <>
@@ -31,9 +32,11 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
+                {/* Home Button */}
+                <Link to='/' className='goBack'> <SiGooglehome /></Link>
             </nav>
         </>
     )
 }
 
-export default Navbar;
+export default ReactRouter;
