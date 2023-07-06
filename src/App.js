@@ -34,7 +34,7 @@ function App() {
     return (
 
         <>
-            <RouterProvider router={reactRouter} />
+            <RouterProvider router={reactRouter} /> 
         </>
     );
 }

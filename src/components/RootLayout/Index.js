@@ -1,95 +1,82 @@
 import React from 'react';
-import { NavLink, useLocation  } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import './Styles.css'
+import { FaAngleDoubleRight } from 'react-icons/fa';
 
-const Navbar = () => {
+const FrontProject = () => {
 
-    const myLocation = useLocation()
+    const location = useLocation()
 
-    if (myLocation.pathname === '/counter-up') {
-        return null
-    }
-
-    if (myLocation.pathname === '/movie-list') {
-        return null
-    }
-
-    if (myLocation.pathname === '/item-list') {
-        return null
-    }
-
-    if (myLocation.pathname === '/calculator') {
-        return null
-    }
-
-    if (myLocation.pathname === '/form-extension') {
-        return null
-    }
-
-    if (myLocation.pathname === '/basic-chatapp') {
-        return null
-    }
-
-    if (myLocation.pathname === '/simple-products-card') {
-        return null
-    }
-
-    if (myLocation.pathname === '/login-form') {
-        return null
-    }
-
-    if (myLocation.pathname === '/quiz-game') {
-        return null
-    }
-
-    if (myLocation.pathname === '/todo-list') {
-        return null
-    }
-
-    if (myLocation.pathname === '/user-list') {
+    if (
+        location.pathname === '/counter-up' ||
+        location.pathname === '/movie-list' ||
+        location.pathname === '/item-list' ||
+        location.pathname === '/calculator' ||
+        location.pathname === '/form-extension' ||
+        location.pathname === '/basic-chatapp' ||
+        location.pathname === '/simple-products-card' ||
+        location.pathname === '/login-form' ||
+        location.pathname === '/quiz-game' ||
+        location.pathname === '/todo-list' ||
+        location.pathname === '/user-list'
+    ) {
         return null
     }
 
     return (
         <React.Fragment>
-            <nav>
+            <nav className='projects-link-wrapper'>
+                <h3>React Projects</h3>
                 <ul>
+                    <h4>Elementary</h4>
                     <li>
-                        <NavLink to="/counter-up">Counter</NavLink>
+                        <NavLink to="/counter-up">Counter <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/movie-list">Movie List</NavLink>
+                        <NavLink to="/movie-list">Movie List <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/item-list">Item List</NavLink>
+                        <NavLink to="/item-list">Item List <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/calculator">Calculator</NavLink>
+                        <NavLink to="/calculator">Calculator <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/form-extension">Form Extension</NavLink>
+                        <NavLink to="/form-extension">Form Extension <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/basic-chatapp">Basic ChatApp</NavLink>
+                        <NavLink to="/simple-products-card">Products Card <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/simple-products-card">Products Card</NavLink>
+                        <NavLink to="/login-form">LoginForm <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/login-form">LoginForm</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/quiz-game">Quiz Game</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/todo-list">Todo List</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/user-list">User List</NavLink>
+                        <NavLink to="/user-list">User List <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                     </li>
                 </ul>
+
+                <div className="intermediate-projects">
+                    <h4>Intermediate</h4>
+                    <ul>
+                        <li>
+                            <NavLink to="/basic-chatapp">Chat App <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/quiz-game">Quiz Game <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/todo-list">Todo List <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/project-one">Project Four <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
+                        </li>
+                    </ul>
+                </div>
+
+                <span></span>
             </nav>
         </React.Fragment>
     )
 }
 
-export default Navbar;
+export default FrontProject;
