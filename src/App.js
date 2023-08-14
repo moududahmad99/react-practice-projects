@@ -12,6 +12,7 @@ import LoginForm from './components/LoginForm';
 import QuizGame from './components/Quiz';
 import TodoList from './components/TodoList';
 import UserList from './components/UserList/Index';
+import GitHubSearch from './components/Github User Search/Github Search';
 import './App.css'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path='/quiz-game' element={<QuizGame />} />
             <Route path='/todo-list' element={<TodoList />} />
             <Route path='/user-list' element={<UserList />} />
+            <Route path='/github-search' element={<GitHubSearch />} />
         </Route>
     ))
 

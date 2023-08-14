@@ -18,7 +18,8 @@ const FrontProject = () => {
         location.pathname === '/login-form' ||
         location.pathname === '/quiz-game' ||
         location.pathname === '/todo-list' ||
-        location.pathname === '/user-list'
+        location.pathname === '/user-list' ||
+        location.pathname === '/github-search' 
     ) {
         return null
     }
@@ -68,7 +69,7 @@ const FrontProject = () => {
                             <NavLink to="/todo-list">Todo List <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/project-one">Project Four <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
+                            <NavLink to="/github-search">GitHub Search <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                         </li>
                     </ul>
                 </div>
