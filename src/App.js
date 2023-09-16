@@ -1,6 +1,7 @@
 import React from 'react';
 import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import RootLayout from './components/RootLayout/RootLayout';
+import Brocolli from './components/Brocolli/Home';
 import Counter from './components/Counter';
 import MovieList from './components/MovieList';
 import MainItemList from './components/ItemList/App';
@@ -18,6 +19,7 @@ import './App.css'
 function App() {
     const reactRouter = createBrowserRouter(createRoutesFromElements(
         <Route path='/' element={<RootLayout />}>
+            <Route path='/brocolli' element={<Brocolli />} />
             <Route path='/counter-up' element={<Counter />} />
             <Route path='/movie-list' element={<MovieList />} />
             <Route path='/item-list' element={<MainItemList />} />

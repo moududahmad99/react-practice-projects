@@ -1,0 +1,144 @@
+.carousel-item1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-item1 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carousel-item1 p {
+  font-size: 16px;
+  color: #333;
+}
+
+.carousel-item1 img {
+  height: auto;
+}
+
+.banner-wrapper .text-content {
+  font-family: "Open Sans";
+}
+
+.banner-wrapper .text-content h1,
+.banner-wrapper .text-content h5 {
+  font-family: "Rajdhani";
+}
+
+.banner-wrapper .text-content h1 {
+  margin-bottom: 70px;
+  color: #071c1f;
+}
+
+.banner-wrapper .text-content i {
+  color: linear-gradient(#3f6b2a, #1e3913) !important;
+  color: #284d19d8;
+  font-size: 26px;
+}
+
+.banner-wrapper .text-content a {
+  font-family: "Rajdhani";
+  padding: 20px 35px;
+  background-color: #80b500;
+  color: #ffffff;
+  transition: .4s;
+}
+
+.banner-wrapper .text-content a:hover {
+  background: #071c1f;
+}
+
+/* ---------- */
+.slick-track {
+  height: 450px;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 15px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: #c5c5c4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots .slick-active button::before {
+  color: #80b500 !important;
+}
+
+
+
+
+
+/* .custom-slick-prev, .custom-slick-next {
+  transition: .4s;
+  display: none;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+.banner-wrapper:hover */
+
+.custom-slick-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  padding: 16px;
+  border: thin solid #e4e4e0b9;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+
+}
+
+.custom-slick-arrow:hover {
+  background-color: #80b500;
+  color: #ffffff;
+  border: thin solid transparent;
+
+}
+
+.custom-slick-arrow:hover svg {
+  color: #ffffff;
+}
+
+
+.custom-slick-prev {
+  left: -100px;
+}
+
+.custom-slick-next {
+  right: -100px; 
+}
+
+.custom-slick-arrow svg {
+  width: 20px;
+  height: 20px;
+  color: #000;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+/* ---------- */

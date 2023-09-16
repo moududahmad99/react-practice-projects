@@ -8,6 +8,7 @@ const FrontProject = () => {
     const location = useLocation()
 
     if (
+        location.pathname === '/brocolli' ||
         location.pathname === '/counter-up' ||
         location.pathname === '/movie-list' ||
         location.pathname === '/item-list' ||
@@ -30,6 +31,9 @@ const FrontProject = () => {
                 <h3>React Projects</h3>
                 <ul>
                     <h4>Elementary</h4>
+                    <li>
+                        <NavLink to="/brocolli">Brocolli <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
+                    </li>
                     <li>
                         <NavLink to="/counter-up">Counter <FaAngleDoubleRight style={{ marginLeft: '4px' }} /> </NavLink>
                     </li>
