@@ -1,5 +1,5 @@
 .navbar-inner {
-  font-family: "Rajdhani";
+  font-family: "Rajdhani" !important;
   color: #232323;
 }
 
@@ -20,7 +20,7 @@
   font-size: 20px;
   background: #80b500;
   color: rgb(255, 255, 255);
-  font-family: "Rajdhani";
+  font-family: "Rajdhani" ;
   transition: 0.5s;
 }
 
@@ -50,7 +50,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    height: 100vh;
   }
 
 
@@ -62,7 +61,7 @@
     display: none;
   }
 
-  .sidebar-input input{
+  .sidebar-input input {
     border: thin solid #edf4fc;
     font-family: 'Open Sans';
     margin: 40px 0;

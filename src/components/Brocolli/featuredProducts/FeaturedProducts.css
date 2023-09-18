@@ -1,0 +1,88 @@
+.featProducts-card {
+    position: relative;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    border: thin solid #3a575c11;
+}
+
+.featProducts-card img {
+    height: 290px;
+    width: 100%;
+}
+
+.new-arrival {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 4px 20px;
+    background-color: #80B500;
+    color: #FFFFFF;
+    -webkit-border-radius: 10px 0 10px 0;
+    border-radius: 10px 0 10px 0;
+    -moz-border-radius: 10px 0 10px 0;
+    -ms-border-radius: 10px 0 10px 0;
+    -o-border-radius: 10px 0 10px 0;
+}
+
+.featProducts-desc h4 {
+    font-family: 'Rajdhani';
+    cursor: pointer;
+}
+
+.featProducts-desc h3 span {
+    text-decoration: line-through;
+}
+
+.featProducts-desc i {
+    color: #FFBF21;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.featProducts-desc i:hover,
+.featProducts-desc h4:hover,
+.featProducts-desc h3 {
+    color: #80B500;
+}
+
+.featured-hoverIcons {
+    display: none;
+}
+
+.featProducts-card:hover {
+    box-shadow: 0px 10px 48px 10px rgba(185, 185, 185, 0.4);
+}
+
+.featProducts-card:hover .featured-hoverIcons {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+}
+
+.featured-hoverIcons li {
+    background-color: #FFFFFF;
+    color: #071c1f;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.featured-hoverIcons li:hover {
+    color: #FFFFFF;
+    background-color: #80B500;
+}

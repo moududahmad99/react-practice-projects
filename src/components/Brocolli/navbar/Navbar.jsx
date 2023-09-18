@@ -26,7 +26,7 @@ const Navbar = () => {
             </picture>
           </div>
           <div className="navbar-inner flex justify-center w-5/12">
-            <ul className='flex text-center'>
+            <ul className='flex text-center z-[1]'>
               {sidebarOpen && (
                 <>
                   <div className="sidebar-logo mb-5 pt-10 flex justify-between items-center px-5">
