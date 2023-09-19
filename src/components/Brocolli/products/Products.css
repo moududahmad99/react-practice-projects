@@ -1,25 +1,26 @@
 /* Product Tabs */
 .products-tabs Tab {
-    position: relative;
+  position: relative;
 }
 
 .products-tabs {
-    font-family: 'Rajdhani';
+  font-family: "Rajdhani";
 }
 
 .products-tabs span {
-    height: 25px ;
-    width: 1px;
-    position: absolute;
-    right: -60px;
-    top: 20%;
-    background: #9fa09d;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+  height: 25px;
+  width: 1px;
+  position: absolute;
+  right: -60px;
+  top: 20%;
+  background: #9fa09d;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
+
 /* Product Card */
 
 .products-card {
@@ -111,7 +112,79 @@
 }
 
 .react-tabs__tab--selected {
-    border: none;
-    color: #80B500;
-    border-bottom: thin solid #80b500 !important;
+  border: none;
+  color: #80b500;
+  border-bottom: thin solid #80b500 !important;
+}
+
+/* Responsive Area */
+
+@media (max-width: 549.98px) {
+  #products h1 {
+    font-size: 22px;
+  }
+
+  .products-tabs span {
+    display: none;
+  }
+
+  .products-inner {
+    display: block;
+  }
+
+  .products-inner .productsResponsive {
+    display: block;
+  }
+
+  .products-inner .productsResponsive .prodsResInner {
+    width: 100%;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 767.98px) {
+  #products h1 {
+    font-size: 25px;
+  }
+
+  .products-tabs span {
+    display: none;
+  }
+
+  .products-inner {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #products h1 {
+    font-size: 30px;
+  }
+
+  .products-tabs span {
+    display: none;
+  }
+
+  .products-inner {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #products h1 {
+    font-size: 35px;
+  }
+
+  .products-tabs span {
+    right: -39px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #products h1 {
+    font-size: 40px;
+  }
+
+  .products-tabs span {
+    right: -66px;
+  }
 }

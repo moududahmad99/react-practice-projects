@@ -23,7 +23,8 @@
 }
 
 .banner-wrapper .text-content h1,
-.banner-wrapper .text-content h5 {
+.banner-wrapper .text-content h5,
+.banner-wrapper .text-content p {
   font-family: "Rajdhani";
 }
 
@@ -48,6 +49,17 @@
 
 .banner-wrapper .text-content a:hover {
   background: #071c1f;
+}
+
+.banner-wrapper .text-content  .bgWhite {
+  background: #ffffff;
+  color: #071c1f;
+  box-shadow: 0px 10px 48px 10px rgba(185, 185, 185, 0.4);
+  margin-left: 10px;
+}
+
+.banner-wrapper .text-content .bgWhite:hover {
+  color: #c5c5c4 !important;
 }
 
 /* ---------- */
@@ -76,19 +88,6 @@
   color: #80b500 !important;
 }
 
-
-
-
-
-/* .custom-slick-prev, .custom-slick-next {
-  transition: .4s;
-  display: none;
-  -webkit-transition: .4s;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
-}
-.banner-wrapper:hover */
 
 .custom-slick-arrow {
   position: absolute;
@@ -150,4 +149,117 @@
   .custom-slick-arrow {
     display: none;
   }
+}
+
+
+@media (max-width: 575.98px) {
+  .banner-wrapper .slick-list {
+    height: 575px;
+  }
+
+  .banner-wrapper .slick-list:nth-child(1) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .bannerHeightResponsive {
+    display: block;
+    height: 100px;
+  }
+
+  .banner-wrapper .carousel-item1 .text-content h1 {
+    margin: 45px 0;
+    font-size: 50px;
+  }
+
+  .banner-wrapper .carousel-item1 .text-content {
+    margin-bottom: 60px;
+  }
+
+  .banner-wrapper .carousel-item2 h1 {
+    padding-left: 10px;
+  }
+
+  .banner-wrapper .carousel-item2 .text-content h1 {
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+  .banner-wrapper .custom-slick-arrow {
+    display: none;
+  }
+
+  .banner-wrapper .text-content p {
+    padding: 0 18px 18px 25px;
+  }
+
+  .banner-wrapper .text-content .bgWhite {
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner-wrapper .slick-list {
+    height: 705px;
+  }
+
+  .bannerHeightResponsive {
+    display: block;
+    height: 100px;
+  }
+
+  .banner-wrapper .carousel-item2 h1 {
+    padding-left: 40px;
+  }
+
+  .banner-wrapper .text-content h1 {
+    margin-bottom: 30px;
+}
+
+  .banner-wrapper .custom-slick-arrow {
+    display: none;
+  }
+
+  .banner-wrapper .text-content p {
+    padding: 0 18px 32px 140px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner-wrapper .slick-list {
+    height: 705px;
+  }
+
+  .bannerHeightResponsive {
+    display: block;
+    height: 100px;
+  }
+
+  .banner-wrapper .carousel-item2 h1 {
+    padding-left: 40px;
+  }
+
+  .banner-wrapper .text-content h1 {
+    margin-bottom: 30px;
+}
+
+  .banner-wrapper .custom-slick-arrow {
+    display: none;
+  }
+
+  .banner-wrapper .text-content p {
+    padding: 0 18px 32px 140px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1199.98px) {
+
 }

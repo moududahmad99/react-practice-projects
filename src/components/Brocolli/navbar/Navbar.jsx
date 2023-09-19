@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 
 import { BsSearch } from 'react-icons/bs';
@@ -16,10 +16,30 @@ const Navbar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 600) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
-    <div className={`bg-[#F7F5EB] navbar ${sidebarOpen ? 'sidebar-open' : ''}`}>
+    <div className={`bg-[#F7F5EB] navbar ${isSticky ? 'sticky z-[2] top-0 bg-[#FFFFFF] shadow-md text-dark' : ''} ${sidebarOpen ? 'sidebar-open' : ''}`}>
       <div className='Grid p-8'>
-        <div className='navbar-wrapper items-center flex justify-between items-center'>
+        <div className='navbar-wrapper z-[2] items-center flex justify-between items-center'>
           <div className="navbar-inner w-3/12">
             <picture>
               <img src="../../assets/logo.png" alt="logo" />

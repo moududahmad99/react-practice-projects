@@ -16,11 +16,11 @@
 }
 
 .blog-card--inner img {
-    transition: 1.5s;
-    -webkit-transition: 1.5s;
-    -moz-transition: 1.5s;
-    -ms-transition: 1.5s;
-    -o-transition: 1.5s;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
 }
 
 .blog-card:hover .blog-card--inner img {
@@ -122,3 +122,69 @@
   -o-transition: 0.4s;
 }
 /* ------------- */
+
+/* Responsive Area */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #blog-wrapper h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  #blog-wrapper h1 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  #blog-wrapper h1 {
+    font-size: 35px;
+  }
+
+  #blog-wrapper .blog-card--inner p {
+    font-size: 14px;
+  }
+
+  #blog-wrapper .blogCardTextRes {
+    display: block;
+  }
+
+  #blog-wrapper .blog-card--inner h4 {
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+  .blogTextMarginRes {
+    margin: 7px 0 0 0;
+  }
+
+  .blogTextMarginRes a {
+    padding: 0;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 768px) {
+  #blog-wrapper h1 {
+    font-size: 26px;
+  }
+
+  #blog-wrapper .blog-card--inner p {
+    font-size: 14px;
+  }
+
+  #blog-wrapper .blogCardTextRes {
+    display: flex;
+  }
+
+  #blog-wrapper .blog-card--inner h4 {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 549px) {
+  #blog-wrapper h1 {
+    font-size: 22px;
+  }
+}

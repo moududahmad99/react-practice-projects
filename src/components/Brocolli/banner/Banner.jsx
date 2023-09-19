@@ -10,7 +10,6 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 import Banner1 from '../../../assets/banner-1.png'
-// import Banner2 from '../../assets/banner-2.png'
 
 const CustomLeftArrow = ({ onClick }) => (
   <div className="custom-slick-arrow custom-slick-prev" onClick={onClick}>
@@ -45,7 +44,7 @@ const Banner = () => {
         <div className="banner-wrapper">
           <Slider {...settings}>
             <div className="carousel-item1 w-1/2">
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center bannerHeightResponsive'>
                 <div className="text-content">
                   <motion.div
                     initial={{ opacity: 0, y: 80 }}
@@ -84,7 +83,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="carousel-item2 w-1/2">
-              <div className='flex flex-row-reverse justify-between items-center'>
+              <div className='flex flex-row-reverse justify-between items-center bannerHeightResponsive'>
                 <div className="text-content text-right">
                   <motion.div
                     initial={{ opacity: 0, y: 80 }}
@@ -104,16 +103,27 @@ const Banner = () => {
                     exit={{ opacity: 0, y: 40 }}
                     transition={{ duration: 1 }}
                   >
-                    <h1 className='text-6xl my-4 font-bold'>Tasty & Healty Organic Food</h1>
+                    <h1 className='text-6xl my-4 font-bold'>Our Garden's Most Favourite Food</h1>
                   </motion.h1>
+
+                  <motion.h1
+                    initial={{ opacity: 0, y: 80 }}
+                    animate={{ opacity: 1, y: 0, transition: { duration: 1, delay: 1. } }}
+                    exit={{ opacity: 0, y: 40 }}
+                    transition={{ duration: 1 }}
+                  >
+                    <p className='font-medium text-lg border-r'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt possimus cumque quasi?</p>
+                  </motion.h1>
+
 
                   <motion.div
                     initial={{ opacity: 0, y: 80 }}
-                    animate={{ opacity: 1, y: 0, transition: { duration: 1, delay: 1.2 } }}
+                    animate={{ opacity: 1, y: 0, transition: { duration: 1, delay: 1.8 } }}
                     exit={{ opacity: 0, y: 40 }}
                     transition={{ duration: 1 }}
                   >
                     <a href="##" className='uppercase font-semibold'>Explore Products</a>
+                    <a href="##" className='uppercase font-semibold pl-5 bgWhite'>Learn More</a>
                   </motion.div>
 
                 </div>
